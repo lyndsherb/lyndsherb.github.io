@@ -15,5 +15,11 @@
   "bugs": {
     "url": "https://github.com/lyndsherb/lyndsherb.github.io/issues"
   },
-  "homepage": "https://www.shadowandfox.co"
+  "homepage": "https://www.shadowandfox.co",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-inject": "^4.3.2",
+    "gulp-sass": "^4.0.1",
+    "gulp-svg-symbols": "^3.1.1"
+  }
 }
