@@ -28,6 +28,9 @@ $colour-body-bg-default: $colour-meta;
 $colour-drop-shadow-default: rgba($colour-texas, 0.4);
 $colour-drop-shadow-light: rgba($colour-wash, 0.4);
 
+// Colour defaults - Icon
+$colour-icon-default: rgba($colour-texas, 0.75);
+
 // Colour defaults - Buttons
 // Primary
 $colour-btn-primary-text-default: $colour-meta;
@@ -57,3 +60,7 @@ $colour-header-shadow: $colour-drop-shadow-light;
 // footer
 $colour-footer-text: $colour-wash;
 $colour-footer-bg: $colour-wyoming;
+
+// sections
+$colour-container-intro-bg: rgba($colour-wyoming, 0.2);
+$colour-container-social-bg: rgba($colour-wyoming, 0.4);

@@ -6,6 +6,8 @@ img {
 .icon {
     width: 32px;
     height: 32px;
+    fill: $colour-icon-default;
+    transition: fill $transition-default;
 }
 
 .icon--missguided {
@@ -16,4 +18,24 @@ img {
 .icon--ladbiblegroup {
     width: 70px;
     height: 70px;
+
+    &:hover .st1 {
+        fill: $colour-lad;
+    }
+}
+
+.icon--linkedin:hover {
+    fill: $colour-linkedin;
+}
+
+.icon--github:hover {
+    fill: $colour-github;
+}
+
+.icon--twitter:hover {
+    fill: $colour-twitter;
+}
+
+.icon--email:hover {
+    fill: $colour-email;
 }

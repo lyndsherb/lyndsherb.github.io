@@ -4,6 +4,17 @@
     import all styles into here and generate a single stylesheet for everything.
 */
 /*
+    block-content mixin
+
+    If we have an element that we need to take up a container, e.g. images,
+    we cna use this to absolutely position it inside the parent.
+    We can also define if it's a pseudoelement too to ensure that we can
+    use this mixin for those too, instead of having to repeat ourselves too often.
+
+    @param $pseudo: if the element is a pseudo-element or not. If it is, ensure we
+        render out an empty `content` element.
+*/
+/*
     Colours
     Coolors Exported Palette - coolors.co/0d1b2a-e8e8e8-93a3b1-119da4-b3094b
 */
@@ -27,6 +38,11 @@
 */
 /*
     Sizing
+*/
+/*
+    Breakpoints
+
+    A list of useful breakpoints for media queries and suchlike.
 */
 /*
     Normalise
@@ -118,7 +134,9 @@ img {
 
 .icon {
   width: 32px;
-  height: 32px; }
+  height: 32px;
+  fill: rgba(13, 27, 42, 0.75);
+  transition: fill 0.2s ease-out; }
 
 .icon--missguided {
   width: 100px;
@@ -127,6 +145,20 @@ img {
 .icon--ladbiblegroup {
   width: 70px;
   height: 70px; }
+  .icon--ladbiblegroup:hover .st1 {
+    fill: #EB4136; }
+
+.icon--linkedin:hover {
+  fill: #0077B5; }
+
+.icon--github:hover {
+  fill: #000000; }
+
+.icon--twitter:hover {
+  fill: #1DA1F2; }
+
+.icon--email:hover {
+  fill: rebeccapurple; }
 
 /*
     Horizontal list styles
@@ -136,6 +168,25 @@ img {
   margin: 0;
   padding: 0;
   list-style-type: none; }
+
+/*
+    Container styles
+
+    We may want to style a container but any direct child element needs to sit centrally
+    so we use this to ensure only the child has the auto-margins on either side
+    and fits to a max-width. Means we have - theoretically - fewer wrappers to contend with.
+*/
+.container {
+  width: 100vw;
+  align-self: flex-start; }
+  .container > * {
+    margin: 0 auto;
+    max-width: 1280px;
+    padding: 1rem; }
+    @media only screen and (min-width: 1280px) {
+      .container > * {
+        padding-right: 0;
+        padding-left: 0; } }
 
 /*
     Navigation
@@ -167,6 +218,9 @@ img {
   text-align: center;
   font-size: 0.8rem;
   color: #93a3b1; }
+
+.section--social {
+  justify-content: space-around; }
 
 .header {
   display: flex;
