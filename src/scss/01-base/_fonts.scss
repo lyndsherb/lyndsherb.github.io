@@ -6,6 +6,12 @@ body {
 
 a {
     color: $colour-hyperlink-default;
+
+    &:hover,
+    &:focus,
+    &:active {
+        color: $colour-hyperlink-hover;
+    }
 }
 
 h1,

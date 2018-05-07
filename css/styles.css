@@ -44,6 +44,8 @@ body {
 
 a {
   color: #119da4; }
+  a:hover, a:focus, a:active {
+    color: #074548; }
 
 h1,
 h2,
@@ -65,14 +67,15 @@ h3 {
   background-color: #119da4;
   color: white;
   border-color: #119da4; }
-  .button--primary:hover {
+  .button--primary:hover, .button--primary:focus, .button--primary:active {
     background-color: #074548;
+    color: white;
     border-color: #074548; }
 
 .button--secondary {
   background-color: transparent;
   color: #b3094b;
   border-color: #b3094b; }
-  .button--secondary:hover {
+  .button--secondary:hover, .button--secondary:focus, .button--secondary:active {
     background-color: #b3094b;
     color: white; }
