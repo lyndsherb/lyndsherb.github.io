@@ -1,7 +1,7 @@
 const gulp = require('gulp');
 const sass = require('gulp-sass');
 const svgSymbols = require('gulp-svg-symbols');
-const inject = require('gulp-inject');
+// const inject = require('gulp-inject');
 
 const dir = {
     src: {

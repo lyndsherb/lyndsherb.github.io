@@ -28,22 +28,6 @@
 /*
     Sizing
 */
-/*
-    Normalise
-
-    Based on:
-    Normalize.css: http://necolas.github.io/normalize.css/
-    Box-sizing: https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
-*/
-html {
-  box-sizing: border-box;
-  font-size: 100%; }
-
-*,
-*::before,
-*::after {
-  box-sizing: inherit; }
-
 body {
   font-family: "Lato", sans-serif;
   background-color: #e8e8e8;
@@ -115,3 +99,12 @@ img {
 .icon--ladbiblegroup {
   width: 70px;
   height: 70px; }
+
+/*
+    Overrides
+
+    Sometimes we want to override something else that's happening, e.g. hiding elements or making
+    them only visible on certain viewports.
+*/
+.no-display {
+  outline: 1px dotted red; }
