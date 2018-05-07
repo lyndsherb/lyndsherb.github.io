@@ -22,7 +22,11 @@ $colour-hyperlink-default: $colour-tucker;
 $colour-hyperlink-hover: $colour-carolina;
 
 // Colour defaults - Background
-$colour-body-bg-default: $colour-wyoming;
+$colour-body-bg-default: $colour-meta;
+
+// Colour defaults - Drop shadow
+$colour-drop-shadow-default: rgba($colour-texas, 0.4);
+$colour-drop-shadow-light: rgba($colour-wash, 0.4);
 
 // Colour defaults - Buttons
 // Primary
@@ -40,5 +44,10 @@ $colour-btn-secondary-text-default: $colour-simmons;
 $colour-btn-secondary-bg-hover: $colour-simmons;
 $colour-btn-secondary-text-hover: $colour-meta;
 
+// header
+$colour-header-bg: $colour-meta;
+$colour-header-shadow: $colour-drop-shadow-light;
+
 // footer
 $colour-footer-text: $colour-wash;
+$colour-footer-bg: $colour-wyoming;

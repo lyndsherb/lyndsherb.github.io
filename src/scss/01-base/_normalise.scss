@@ -19,7 +19,7 @@ html {
 }
 
 body {
-    margin: 0;
+    margin: $sizing-spacing-x-large 0 0 0;
     display: flex;
     flex-wrap: wrap;
     min-height: 100vh;
