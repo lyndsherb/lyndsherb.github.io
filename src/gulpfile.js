@@ -4,16 +4,16 @@ const sass = require('gulp-sass');
 const dir = {
     src: {
         base: './',
-        styles: './scss',
+        styles: './scss/',
     },
     dest: {
         base: '../',
-        styles: '../css',
+        styles: '../css/',
     }
 }
 
 gulp.task('css', () => {
-    return gulp.src(dir.src.styles)
+    return gulp.src(`${dir.src.styles}styles.scss`)
         .pipe(sass())
         .pipe(gulp.dest(dir.dest.styles));
 });
