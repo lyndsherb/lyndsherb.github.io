@@ -1,0 +1,12 @@
+body {
+    font-family: $font-family-default;
+    background-color: $colour-body-bg-default;
+    color: $colour-text-default;
+}
+
+h1,
+h2,
+h3 {
+    font-family: $font-family-display;
+    font-weight: $font-weight-display;
+}

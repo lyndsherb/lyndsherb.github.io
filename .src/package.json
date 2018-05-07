@@ -1,0 +1,19 @@
+{
+  "name": "lyndsherb.github.io",
+  "version": "1.0.0",
+  "description": "Setup for my personal site",
+  "main": ".",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/lyndsherb/lyndsherb.github.io.git"
+  },
+  "author": "Lyndsey Herbert <lyndsherb@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lyndsherb/lyndsherb.github.io/issues"
+  },
+  "homepage": "https://www.shadowandfox.co"
+}
