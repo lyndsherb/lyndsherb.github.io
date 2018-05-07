@@ -4,21 +4,75 @@
     import all styles into here and generate a single stylesheet for everything.
 */
 /*
-    Base colours
-
-    Coolors Exported Palette - coolors.co/0d1b2a-dee5e5-93a3b1-119da4-f9aecb
+    Colours
+    Coolors Exported Palette - coolors.co/0d1b2a-e8e8e8-93a3b1-119da4-f9aecb
 */
 /*
     Font defaults
 
     Looking for font sizes? They're in 00-vars/_sizes.scss.
 */
+/*
+    Transitions
+
+    Keeping transitional effects consistent sitewide by keeping the
+    default styles here.
+*/
+/*
+    Sizing
+*/
+/*
+    Normalise
+
+    Based on:
+    Normalize.css: http://necolas.github.io/normalize.css/
+    Box-sizing: https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+*/
+html {
+  box-sizing: border-box;
+  font-size: 100%; }
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; }
+
 body {
   font-family: "Lato", sans-serif;
-  background-color: #dee5e5;
+  background-color: #e8e8e8;
   color: #0d1b2a; }
+
+a {
+  color: #119da4; }
 
 h1,
 h2,
 h3 {
   font-weight: 600; }
+
+.button {
+  transition: background-color 0.2s ease-out, border 0.2s ease-out, color 0.2s ease-out;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 0.5rem;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 0.25rem;
+  display: inline-block; }
+
+.button--primary {
+  background-color: #119da4;
+  color: white;
+  border-color: #119da4; }
+  .button--primary:hover {
+    background-color: #074548;
+    border-color: #074548; }
+
+.button--secondary {
+  background-color: transparent;
+  color: #b3094b;
+  border-color: #b3094b; }
+  .button--secondary:hover {
+    background-color: #f9aecb;
+    color: #b3094b; }
