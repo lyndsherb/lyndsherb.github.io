@@ -1,0 +1,13 @@
+/*
+    Horizontal list styles
+*/
+
+.h-nav {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.h-nav__item {
+    display: inline-block;
+}

@@ -28,6 +28,26 @@
 /*
     Sizing
 */
+/*
+    Normalise
+
+    1. Adjusts the box-sizing as per https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/.
+    2. Prevent adjustments of font size after orientation changes in iOS. From http://necolas.github.io/normalize.css/.
+
+*/
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%; }
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; }
+
+body {
+  margin: 0; }
+
 body {
   font-family: "Lato", sans-serif;
   background-color: #e8e8e8;
@@ -100,6 +120,14 @@ img {
   width: 70px;
   height: 70px; }
 
+.h-nav {
+  margin: 0;
+  padding: 0;
+  list-style-type: none; }
+
+.h-nav__item {
+  display: inline-block; }
+
 /*
     Overrides
 
@@ -107,4 +135,4 @@ img {
     them only visible on certain viewports.
 */
 .no-display {
-  outline: 1px dotted red; }
+  display: none; }
