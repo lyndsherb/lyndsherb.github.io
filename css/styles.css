@@ -46,14 +46,16 @@ html {
   box-sizing: inherit; }
 
 body {
-  margin: 2.5rem 0 0 0;
+  margin: 0;
   display: flex;
   flex-wrap: wrap;
   min-height: 100vh; }
+  body > * {
+    align-self: flex-start; }
 
 body {
   font-family: "Lato", sans-serif;
-  background-color: white;
+  background-color: #f7f7f7;
   color: #0d1b2a; }
 
 a {
@@ -95,11 +97,11 @@ h3 {
 
 .button--primary {
   background-color: #119da4;
-  color: white;
+  color: #f7f7f7;
   border-color: #119da4; }
   .button--primary:hover, .button--primary:focus, .button--primary:active {
     background-color: #074548;
-    color: white;
+    color: #f7f7f7;
     border-color: #074548; }
 
 .button--secondary {
@@ -108,7 +110,7 @@ h3 {
   border-color: #b3094b; }
   .button--secondary:hover, .button--secondary:focus, .button--secondary:active {
     background-color: #b3094b;
-    color: white; }
+    color: #f7f7f7; }
 
 img {
   max-width: 100%;
@@ -130,12 +132,32 @@ img {
     Horizontal list styles
 */
 .h-list {
+  display: flex;
   margin: 0;
   padding: 0;
   list-style-type: none; }
 
-.h-list__item {
-  display: inline-block; }
+/*
+    Navigation
+
+    Default navigation styles
+
+    1. Display: block applied as links are usually inline, so any padding/margin applied
+        makes it sit weird.
+*/
+.nav .h-list__item a {
+  display: block;
+  padding-top: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 0.75rem;
+  padding-left: 1rem;
+  border-bottom: 0.25rem solid transparent;
+  color: #0d1b2a;
+  text-decoration: none;
+  font-weight: 700; }
+  .nav .h-list__item a:hover, .nav .h-list__item a:focus, .nav .h-list__item a:active, .nav .h-list__item a:target {
+    color: #119da4;
+    border-color: #119da4; }
 
 .footer {
   align-self: flex-end;
@@ -147,20 +169,19 @@ img {
   color: #93a3b1; }
 
 .header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  padding: 0.5rem;
-  background-color: white;
+  flex: 0 0 auto;
+  margin-bottom: 2rem;
+  width: 100vw;
+  background-color: #f7f7f7;
   box-shadow: 0 0.25rem 3px rgba(147, 163, 177, 0.4); }
   .header .logo {
     width: 50px;
-    height: 50px;
-    background-color: #93a3b1; }
+    height: 30px;
+    background-color: #93a3b1;
+    margin: 1rem; }
 
 /*
     Overrides

@@ -1,18 +1,18 @@
 .header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    padding: $sizing-spacing-small;
+    // align-self: flex-start;
+    flex: 0 0 auto;
+    margin-bottom: $sizing-spacing-large;
+    width: 100vw;
     background-color: $colour-header-bg;
     box-shadow: 0 $sizing-spacing-x-small 3px $colour-header-shadow;
 
-    .logo {
+    .logo { // to replace with actual logo
         width: 50px;
-        height: 50px;
+        height: 30px;
         background-color: $colour-wash;
+        margin: $sizing-spacing-regular;
     }
 }
