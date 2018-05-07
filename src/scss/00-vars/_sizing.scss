@@ -18,9 +18,11 @@ $sizing-line-height-default: 1.2;
 $sizing-line-height-large: 1.5;
 
 // Spacing
-$sizing-spacing-base: ($sizing-default / 2);
-$sizing-spacing-double: $sizing-default;
-$sizing-spacing-half: ($sizing-spacing-base / 2);
+$sizing-spacing-x-large: ($sizing-default * 2.5);
+$sizing-spacing-large: ($sizing-default * 2);
+$sizing-spacing-regular: $sizing-default;
+$sizing-spacing-small: ($sizing-default / 2);
+$sizing-spacing-x-small: ($sizing-default / 4);
 
 // Borders
 $sizing-border-default: 1px;

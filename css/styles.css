@@ -46,7 +46,10 @@ html {
   box-sizing: inherit; }
 
 body {
-  margin: 0; }
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 100vh; }
 
 body {
   font-family: "Lato", sans-serif;
@@ -120,13 +123,24 @@ img {
   width: 70px;
   height: 70px; }
 
-.h-nav {
+/*
+    Horizontal list styles
+*/
+.h-list {
   margin: 0;
   padding: 0;
   list-style-type: none; }
 
-.h-nav__item {
+.h-list__item {
   display: inline-block; }
+
+.footer {
+  align-self: flex-end;
+  margin-top: 2rem;
+  width: 100vw;
+  text-align: center;
+  font-size: 0.8rem;
+  color: #93a3b1; }
 
 /*
     Overrides
