@@ -8,7 +8,7 @@ const dir = {
     },
     dest: {
         base: '../',
-        styles: '../styles',
+        styles: '../css',
     }
 }
 
@@ -18,4 +18,4 @@ gulp.task('css', () => {
         .pipe(gulp.dest(dir.dest.styles));
 });
 
-gulp.task('default', [css]);
+gulp.task('default', ['css']);
