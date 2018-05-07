@@ -1,14 +1,35 @@
 /*
-    Base colours
-
-    Coolors Exported Palette - coolors.co/0d1b2a-dee5e5-93a3b1-119da4-f9aecb
+    Colours
+    Coolors Exported Palette - coolors.co/0d1b2a-e8e8e8-93a3b1-119da4-f9aecb
 */
+// Base colours
 $colour-meta: rgb(255, 255, 255);
 $colour-texas: rgb(13, 27, 42);
-$colour-wyoming: rgb(222, 229, 229);
+$colour-wyoming: rgb(232, 232, 232);
 $colour-wash: rgb(147, 163, 177);
 $colour-tucker: rgb(17, 157, 164);
+$colour-caboose: rgb(9, 93, 179);
 $colour-donut: rgb(249, 174, 203);
+$colour-simmons: rgb(179, 9, 75);
 
+// Colour defaults - Text
 $colour-text-default: $colour-texas;
+$colour-hyperlink-default: $colour-tucker;
+
+// Colour defaults - Background
 $colour-body-bg-default: $colour-wyoming;
+
+// Colour defaults - Buttons
+// Primary
+$colour-btn-primary-text-default: $colour-meta;
+$colour-btn-primary-bg-default: $colour-tucker;
+$colour-btn-primary-border-default: $colour-btn-primary-bg-default;
+$colour-btn-primary-bg-hover: darken($colour-tucker, 20%);
+$colour-btn-primary-border-hover: $colour-btn-primary-bg-hover;
+
+// Secondary
+$colour-btn-secondary-bg-default: transparent;
+$colour-btn-secondary-border-default: $colour-simmons;
+$colour-btn-secondary-text-default: $colour-simmons;
+$colour-btn-secondary-bg-hover: $colour-simmons;
+$colour-btn-secondary-text-hover: $colour-meta;

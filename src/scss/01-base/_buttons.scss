@@ -1,0 +1,35 @@
+.button {
+    transition: background-color $transition-default,
+                border $transition-default,
+                color $transition-default;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: $sizing-font-regular;
+    padding: $sizing-spacing-base;
+    border-width: $sizing-border-default;
+    border-style: solid;
+    border-radius: $sizing-border-radius;
+    display: inline-block;
+}
+
+.button--primary {
+    background-color: $colour-btn-primary-bg-default;
+    color: $colour-btn-primary-text-default;
+    border-color: $colour-btn-primary-border-default;
+
+    &:hover {
+        background-color: $colour-btn-primary-bg-hover;
+        border-color: $colour-btn-primary-border-hover;
+    }
+}
+
+.button--secondary {
+    background-color: $colour-btn-secondary-bg-default;
+    color: $colour-btn-secondary-text-default;
+    border-color: $colour-btn-secondary-border-default;
+
+    &:hover {
+        background-color: $colour-btn-secondary-bg-hover;
+        color: $colour-btn-secondary-text-hover;
+    }
+}
