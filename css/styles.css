@@ -8,6 +8,13 @@
     Coolors Exported Palette - coolors.co/0d1b2a-e8e8e8-93a3b1-119da4-b3094b
 */
 /*
+    Brand colours
+
+    Colours specific to the brands and icons we're referencing.
+
+    Keeps the main colours stylesheet out of trouble.
+*/
+/*
     Font defaults
 
     Looking for font sizes? They're in 00-vars/_sizes.scss.
