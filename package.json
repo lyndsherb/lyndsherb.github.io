@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "shadow-and-fox",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "Shadow and Fox",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Lyndsey Herbert <lyndsherb@gmail.com>",
   "dependencies": {
     "gatsby": "^2.0.76",
     "gatsby-image": "^2.0.20",
@@ -30,6 +30,13 @@
     "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\""
   },
   "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-jest": "^23.6.0",
+    "babel-preset-gatsby": "^0.1.6",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^23.6.0",
+    "jslint": "^0.12.0",
     "prettier": "^1.15.2"
   },
   "repository": {
