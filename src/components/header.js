@@ -1,42 +1,44 @@
-import { Link } from 'gatsby'
-import PropTypes from 'prop-types'
-import React from 'react'
+import { Link } from 'gatsby';
+import PropTypes from 'prop-types';
+import React from 'react';
+import styled from 'styled-components';
 
-const Header = ({ siteTitle }) => (
-  <div
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
+import Colours from '../constants/colours';
+import Container from './styled/container';
+
+const BaseHeader = ({ siteTitle, className }) => (
+  <div className={className}>
+    <Container>
+      <h1>
+        <Link to="/">
           {siteTitle}
         </Link>
       </h1>
-    </div>
+    </Container>
   </div>
 )
 
+const Header = styled(BaseHeader)`
+    padding: 1rem 0;
+    margin-bottom: 1.45rem;
+    background-color: ${Colours.headerBg};
+
+    h1 {
+        margin: 0;
+    }
+
+    a {
+        color: inherit;
+        text-decoration: none;
+    }
+`;
+
 Header.propTypes = {
-  siteTitle: PropTypes.string,
+    siteTitle: PropTypes.string,
 }
-
+  
 Header.defaultProps = {
-  siteTitle: ``,
+    siteTitle: ``,
 }
 
-export default Header
+export default Header;

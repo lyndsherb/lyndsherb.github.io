@@ -4,6 +4,7 @@ import { StaticQuery, graphql } from 'gatsby'
 
 import Body from './styled/body';
 import Header from './header';
+import Footer from './Footer';
 import Container from './styled/container';
 import './layout.css'
 
@@ -24,9 +25,7 @@ const Layout = ({ children }) => (
         <Container>
           {children}
         </Container>
-        <footer>
-            © 2018, Built with <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </footer>
+        <Footer />
       </Body>
     )}
   />
