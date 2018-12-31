@@ -1,0 +1,12 @@
+/*
+ * Tools - z
+ *
+ * A handy-dandy function to quickly grab zindex values.
+ *
+ * Shamelessly hijacked from a comment on CSS-Tricks:
+ * https://css-tricks.com/handling-z-index/#comment-1580094
+ */
+
+ @mixin z($label) {
+    z-index: map-get($zIndexMap, $label);
+}

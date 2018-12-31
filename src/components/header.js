@@ -2,12 +2,8 @@ import { Link } from 'gatsby';
 import PropTypes from 'prop-types';
 import React from 'react';
 import styled from 'styled-components';
-
-import col from '../styles/00-variables/_colours.scss';
 import Colours from '../constants/colours';
 import Container from './styled/container';
-
-console.log('col', col);
 
 const BaseHeader = ({ siteTitle, className }) => (
   <div className={className}>
@@ -25,6 +21,7 @@ const Header = styled(BaseHeader)`
     padding: 1rem 0;
     margin-bottom: 1.45rem;
     background-color: ${Colours.headerBg};
+    color: ${Colours.headerText};
 
     h1 {
         margin: 0;
@@ -39,7 +36,7 @@ const Header = styled(BaseHeader)`
 Header.propTypes = {
     siteTitle: PropTypes.string,
 }
-  
+
 Header.defaultProps = {
     siteTitle: ``,
 }

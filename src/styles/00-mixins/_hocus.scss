@@ -1,0 +1,16 @@
+/*
+ * Tools - Hocus
+ *
+ * Hover/Focus mixin to ensure both 'hover' and 'focus' states
+ * match styles where it's required, e.g. button colours.
+ * Good for accessibility IF we have to remove outlines (God forbid).
+ *
+ * Reference: https://gist.github.com/pepelsbey/a2bb3f6b44c4a4729dcc
+ */
+
+ @mixin hocus {
+    &:hover,
+    &:focus {
+        @content;
+    }
+}

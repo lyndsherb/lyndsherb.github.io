@@ -1,12 +1,11 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import PropTypes from 'prop-types'
 import { StaticQuery, graphql } from 'gatsby'
 
-import Body from './styled/body';
 import Header from './header';
 import Footer from './Footer';
 import Container from './styled/container';
-import './layout.css'
+import '../styles/styles.scss';
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -20,13 +19,13 @@ const Layout = ({ children }) => (
       }
     `}
     render={data => (
-      <Body>
-        <Header siteTitle={data.site.siteMetadata.title} />
-        <Container>
-          {children}
-        </Container>
-        <Footer />
-      </Body>
+        <Fragment>
+          <Header siteTitle={data.site.siteMetadata.title} />
+          <Container>
+            {children}
+          </Container>
+          <Footer />
+        </Fragment>
     )}
   />
 )

@@ -1,0 +1,12 @@
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+    background-color: $colour-body-bg-default;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}

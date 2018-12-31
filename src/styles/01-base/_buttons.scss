@@ -1,0 +1,40 @@
+.btn {
+    @include rem(border-radius, 5px);
+    @include rem(padding, 5px);
+    @include rem(border-width, 1px);
+    border-style: solid;
+    cursor: pointer;
+}
+
+.btn--large {
+    @include rem(border-width, 2px);
+    @include rem(padding, 8px);
+    font-size: 1.2rem;
+}
+
+.btn--primary {
+    background-color: $colour-btn-primary-bg-default;
+    color: $colour-btn-primary-text-default;
+    font-weight: bold;
+
+    @include hocus() {
+        background-color: $colour-btn-primary-bg-hover;
+        color: $colour-btn-primary-text-hover;
+    }
+}
+
+.btn--secondary {
+    background-color: $colour-btn-secondary-bg-default;
+    color: $colour-btn-secondary-text-default;
+    font-weight: bold;
+
+    @include hocus() {
+        background-color: $colour-btn-secondary-bg-hover;
+        color: $colour-btn-secondary-text-hover;
+    }
+}
+
+.btn--plain {
+    border-width: 0;
+    background-color: none;
+}

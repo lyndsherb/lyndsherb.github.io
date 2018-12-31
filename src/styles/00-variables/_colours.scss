@@ -1,6 +1,6 @@
 /*
     Colours
-    Coolors Exported Palette - coolors.co/0d1b2a-e8e8e8-93a3b1-119da4-b3094b
+    Coolors Exported Palette - https://coolors.co/0d1b2a-e8e8e8-93a3b1-119da4-b3094b
 */
 // Base colours
 // Primary
@@ -8,7 +8,7 @@ $colour-texas: rgb(13, 27, 42);
 $colour-wyoming: rgb(232, 232, 232);
 $colour-wash: rgb(147, 163, 177);
 $colour-tucker: rgb(17, 157, 164);
-$colour-simmons: rgb(179, 9, 75);
+$colour-grif: rgb(226, 143, 9);
 
 // Secondary
 $colour-meta: rgb(247, 247, 247);
@@ -42,9 +42,9 @@ $colour-btn-primary-text-hover: $colour-btn-primary-text-default;
 
 // Secondary
 $colour-btn-secondary-bg-default: transparent;
-$colour-btn-secondary-border-default: $colour-simmons;
-$colour-btn-secondary-text-default: $colour-simmons;
-$colour-btn-secondary-bg-hover: $colour-simmons;
+$colour-btn-secondary-border-default: $colour-grif;
+$colour-btn-secondary-text-default: $colour-grif;
+$colour-btn-secondary-bg-hover: $colour-grif;
 $colour-btn-secondary-text-hover: $colour-meta;
 
 // navigation

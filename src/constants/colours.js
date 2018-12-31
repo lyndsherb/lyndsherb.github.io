@@ -51,8 +51,9 @@ const Colours = {
     navItem: base.texas,
 
     // header
-    headerBg: base.meta,
+    headerBg: base.tucker,
     headerShadow: base.wash,
+    headerText: base.meta,
 
     // footer
     footerText: base.wash,
