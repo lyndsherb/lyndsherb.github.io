@@ -3,8 +3,11 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import styled from 'styled-components';
 
+import col from '../styles/00-variables/_colours.scss';
 import Colours from '../constants/colours';
 import Container from './styled/container';
+
+console.log('col', col);
 
 const BaseHeader = ({ siteTitle, className }) => (
   <div className={className}>
