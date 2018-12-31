@@ -35,6 +35,12 @@ module.exports = {
       options: {
         includePaths: [`node_modules`, `src/scss`],
       },
+    },
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [`Roboto Slab\:700`]
+      }
     }
   ],
 }

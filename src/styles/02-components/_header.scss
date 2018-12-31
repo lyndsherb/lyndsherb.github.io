@@ -1,0 +1,20 @@
+/*
+ * Components - Header
+ */
+@import '../00-mixins/all';
+@import '../00-variables/all';
+
+.header {
+    padding: 1rem 0;
+    margin-bottom: 1.45rem;
+    background-color: $colour-header-bg;
+    color: $colour-header-text;
+
+    a {
+        color: inherit;
+
+        @include hocus() {
+            color: inherit;
+        }
+    }
+}

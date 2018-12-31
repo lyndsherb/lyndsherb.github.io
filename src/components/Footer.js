@@ -7,7 +7,7 @@ import styled from 'styled-components';
 import { DateTime } from 'luxon';
 
 import Colours from '../constants/colours';
-import Container from './styled/container';
+import Container from './Container';
 
 const StyledFooter = styled.footer`
     background-color: ${Colours.footerBg};
