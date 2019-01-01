@@ -2,7 +2,7 @@
 @import '../00-mixins/all';
 
 .footer {
-    @include rem(margin-top, 10px);
+    @include rem(margin-top, 20px);
     @include rem(padding, 10px);
     @include rem(font-size, 14px);
     background-color: $colour-footer-bg;

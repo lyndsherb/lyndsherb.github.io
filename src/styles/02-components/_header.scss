@@ -5,7 +5,7 @@
 @import '../00-variables/all';
 
 .header {
-    margin-bottom: 1.45rem;
+    @include rem(margin-bottom, 20px);
     background-color: $colour-header-bg;
     color: $colour-header-text;
 
