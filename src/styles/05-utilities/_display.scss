@@ -7,6 +7,14 @@
     display: none !important;
 }
 
+.visually-hidden {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    height: 1px; width: 1px;
+    margin: -1px; padding: 0; border: 0;
+}
+
 @each $point, $val in $mq-breakpoints {
     .no-display--from-#{$point} {
         @include mq($from: $point) {
@@ -17,6 +25,26 @@
     .no-display--to-#{$point} {
         @include mq($until: $point) {
             display: none !important;
+        }
+    }
+
+    .visually-hidden--from-#{$point} {
+        @include mq($from: $point) {
+            position: absolute;
+            overflow: hidden;
+            clip: rect(0 0 0 0);
+            height: 1px; width: 1px;
+            margin: -1px; padding: 0; border: 0;
+        }
+    }
+
+    .visually-hidden--to-#{$point} {
+        @include mq($until: $point) {
+            position: absolute;
+            overflow: hidden;
+            clip: rect(0 0 0 0);
+            height: 1px; width: 1px;
+            margin: -1px; padding: 0; border: 0;
         }
     }
 }

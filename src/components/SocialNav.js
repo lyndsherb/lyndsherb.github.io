@@ -15,8 +15,10 @@ const SocialNav = ({ modifier, contactInfo }) => (
                             href={item.href}
                             rel="noopener noreferrer"
                             target="_blank">
-                            <Icon className={`icon icon--${item.icon}`} />
-                            <span className="no-display--from-tablet">
+                            <Icon
+                                className={`icon icon--${item.icon}`}
+                                alt={item.title} />
+                            <span className="visually-hidden--from-tablet">
                                 {item.title}
                             </span>
                         </a>
