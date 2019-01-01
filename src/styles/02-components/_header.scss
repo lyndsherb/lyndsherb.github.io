@@ -25,12 +25,13 @@
     .container {
         display: flex;
         justify-content: space-between;
-        align-items: center;
+        align-items: stretch;
     }
 }
 
 .header__title {
     @include rem(margin, 10px);
+    text-align: center;
     flex: 1 0 auto;
     order: 2;
 
@@ -49,12 +50,12 @@
         background-color: $colour-meta;
         color: $colour-texas;
     }
-
-    @include mq($from: tablet) {
-        display: none;
-    }
 }
 
 .btn--social {
     order: 3;
+}
+
+.btn {
+    @include rem(margin, 10px 5px);
 }

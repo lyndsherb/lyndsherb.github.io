@@ -16,14 +16,14 @@ const Header = ({ siteTitle, contactInfo }) => (
                 </Link>
             </h1>
             <button
-                className="btn btn--menu"
+                className="btn btn--menu no-display--from-tablet"
                 type="button"
                 aria-label="menu">
                 Menu
             </button>
             <Navigation siteTitle={siteTitle} />
             <button
-                className="btn btn--menu btn--social"
+                className="btn btn--menu btn--social no-display--from-tablet"
                 type="button"
                 aria-label="social">
                 Social
