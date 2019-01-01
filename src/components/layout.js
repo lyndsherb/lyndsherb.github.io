@@ -2,25 +2,34 @@ import React, { Fragment } from 'react'
 import PropTypes from 'prop-types'
 import { StaticQuery, graphql } from 'gatsby'
 
+import Container from './Container';
 import Header from './Header';
 import Footer from './Footer';
-import Container from './Container';
+
 import '../styles/styles.scss';
 
 const Layout = ({ children }) => (
   <StaticQuery
     query={graphql`
-      query SiteTitleQuery {
+      query SiteInfoQuery {
         site {
           siteMetadata {
             title
+            contactInfo {
+              title
+              icon
+              href
+            }
           }
         }
       }
     `}
-    render={data => (
+    render={({ site: { siteMetadata } }) => (
         <Fragment>
-          <Header siteTitle={data.site.siteMetadata.title} />
+          {console.log('siteMetadata', siteMetadata)}
+          <Header
+            siteTitle={siteMetadata.title}
+            contactInfo={siteMetadata.contactInfo} />
           <Container>
             {children}
           </Container>

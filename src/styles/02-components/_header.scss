@@ -30,8 +30,8 @@
 }
 
 .header__title {
-    @include rem(margin, 10px auto 10px);
-    flex: 1 0 50%;
+    @include rem(margin, 10px);
+    flex: 1 0 auto;
 
     @include mq($from: tablet) {
         margin-left: auto;

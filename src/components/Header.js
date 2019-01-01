@@ -3,10 +3,11 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import Container from './Container';
 import Navigation from './Navigation';
+import SocialNav from './SocialNav';
 
 import '../styles/02-components/_header.scss';
 
-const Header = ({ siteTitle }) => (
+const Header = ({ siteTitle, contactInfo }) => (
   <header className="header">
       <Container>
           <button
@@ -21,6 +22,9 @@ const Header = ({ siteTitle }) => (
                   {siteTitle}
               </Link>
           </h1>
+          <SocialNav
+            modifier="nav--social"
+            contactInfo={contactInfo} />
       </Container>
   </header>
 );

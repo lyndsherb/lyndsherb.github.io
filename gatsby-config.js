@@ -3,6 +3,28 @@ module.exports = {
     title: `Shadow and Fox`,
     description: `The blog and portfolio site of Lyndsey Herbert, a Senior Front-end Developer currently working at Ampersand Commerce.`,
     author: `@lyndsherb`,
+    contactInfo: [
+      {
+        title: 'Github',
+        icon: 'github',
+        href: 'https://github.com/lyndsherb',
+      },
+      {
+        title: 'Twitter',
+        icon: 'twitter',
+        href: 'https://www.twitter.com/lyndsherb',
+      },
+      {
+        title: 'Linkedin',
+        icon: 'linkedin',
+        href: 'https://www.linkedin.com/in/lyndsherb/',
+      },
+      {
+        title: 'Email',
+        icon: 'email',
+        href: 'mailto:lyndsey+website@shadowandfox.co',
+      },
+    ],
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -40,6 +62,14 @@ module.exports = {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [`Roboto Slab\:700`]
+      }
+    },
+    {
+      resolve: `gatsby-plugin-react-svg`,
+      options: {
+          rule: {
+            include: /src\/images\/icons/
+          }
       }
     }
   ],
