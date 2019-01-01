@@ -5,6 +5,8 @@
     @include mq($until: tablet) {
         @include block-content(false);
         @include transition(transform);
+        margin: 0;
+        padding: 1rem;
         background-color: $colour-header-bg;
         transform: translateX(-100%);
     }
@@ -13,5 +15,27 @@
         @include mq($until: tablet) {
             transform: translateX(0);
         }
+    }
+
+    .h-list__item {
+        margin-bottom: 0.5rem;
+
+        @include mq($from: tablet) {
+            margin-bottom: 0;
+        }
+
+        &:not(:last-of-type) {
+            @include mq($from: tablet) {
+                margin-right: 1rem;
+            }
+        }
+    }
+}
+
+.nav__title {
+    margin-bottom: 1rem;
+
+    @include mq($from: tablet) {
+        display: none;
     }
 }

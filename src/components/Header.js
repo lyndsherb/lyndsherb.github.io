@@ -8,17 +8,20 @@ import '../styles/02-components/_header.scss';
 
 const Header = ({ siteTitle }) => (
   <header className="header">
-    <Container>
-      <button className="btn btn--menu">
-          Menu
-      </button>
-      <Navigation siteTitle={siteTitle} />
-      <h1>
-        <Link to="/">
-          {siteTitle}
-        </Link>
-      </h1>
-    </Container>
+      <Container>
+          <button
+              className="btn btn--menu"
+              type="button"
+              aria-label="menu">
+              Menu
+          </button>
+          <Navigation siteTitle={siteTitle} />
+          <h1 className="header__title">
+              <Link to="/">
+                  {siteTitle}
+              </Link>
+          </h1>
+      </Container>
   </header>
 );
 

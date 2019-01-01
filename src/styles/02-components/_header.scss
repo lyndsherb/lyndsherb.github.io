@@ -5,10 +5,15 @@
 @import '../00-variables/all';
 
 .header {
-    padding: 1rem 0;
+    padding: 1rem;
     margin-bottom: 1.45rem;
     background-color: $colour-header-bg;
     color: $colour-header-text;
+
+    @include mq($from: tablet) {
+        padding-right: 0;
+        padding-left: 0;
+    }
 
     a {
         color: inherit;
@@ -16,6 +21,21 @@
         @include hocus() {
             color: inherit;
         }
+    }
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.header__title {
+    @include rem(margin-left, 10px);
+    margin-right: auto;
+
+    @include mq($from: tablet) {
+        margin-left: auto;
     }
 }
 
@@ -27,5 +47,9 @@
     @include hocus() {
         background-color: $colour-meta;
         color: $colour-texas;
+    }
+
+    @include mq($from: tablet) {
+        display: none;
     }
 }
