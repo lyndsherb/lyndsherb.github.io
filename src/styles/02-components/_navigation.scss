@@ -4,6 +4,7 @@
 .nav {
     @include mq($until: tablet) {
         @include block-content(false);
+        @include transition(transform);
         background-color: $colour-header-bg;
         transform: translateX(-100%);
     }

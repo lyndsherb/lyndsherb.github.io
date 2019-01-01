@@ -4,6 +4,10 @@
     @include rem(border-width, 1px);
     border-style: solid;
     cursor: pointer;
+
+    &:not([disabled]) {
+        @include transition((background-color, border-color, color));
+    }
 }
 
 .btn--large {

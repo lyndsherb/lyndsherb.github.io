@@ -1,0 +1,19 @@
+/**
+ * Mixin: Transition
+ *
+ * A quick and dirty mixin to make transition animations easier
+ */
+@mixin transition(
+    $prop: transform,
+    $duration: $transition-duration-default,
+    $func: $transition-func-default,
+    $delay: $transition-delay-default
+) {
+    transition-property: $prop;
+    transition-duration: $duration;
+    transition-timing-function: $func;
+    @if ($delay != 0) {
+        transition-delay: $delay;
+    }
+    will-change: $prop;
+}
