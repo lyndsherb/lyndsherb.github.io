@@ -56,7 +56,8 @@ $colour-nav-item: $colour-texas;
 // header
 $colour-header-bg: $colour-texas;
 $colour-header-text: $colour-meta;
-$colour-header-shadow: $colour-drop-shadow-light;
+$colour-header-icon-default: rgba($colour-wyoming, 0.75);
+$colour-header-icon-hover: $colour-wyoming;
 
 // footer
 $colour-footer-text: $colour-wash;

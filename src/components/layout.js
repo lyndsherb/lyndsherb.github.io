@@ -26,7 +26,6 @@ const Layout = ({ children }) => (
     `}
     render={({ site: { siteMetadata } }) => (
         <Fragment>
-          {console.log('siteMetadata', siteMetadata)}
           <Header
             siteTitle={siteMetadata.title}
             contactInfo={siteMetadata.contactInfo} />

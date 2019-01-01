@@ -10,8 +10,13 @@
 .nav--social {
     flex: 0 1 auto;
 
+    @include mq($until: tablet) {
+        transform: translateX(200%);
+    }
+
     .h-list__item {
         @include rem(margin-bottom, 8px);
+        position: relative;
 
         @include mq($from: tablet) {
             @include rem(padding, 10px);
@@ -20,8 +25,15 @@
     }
 
     svg {
+        @include rem(margin-right, 10px);
         @include rem(width, 20px);
         @include rem(height, 20px);
-        fill: white;
+        @include transition(fill);
+        vertical-align: bottom;
+        fill: $colour-header-icon-default;
+    }
+
+    a:hover svg {
+        fill: $colour-header-icon-hover;
     }
 }

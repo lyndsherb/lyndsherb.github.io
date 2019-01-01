@@ -4,8 +4,7 @@ import PropTypes from 'prop-types';
 import '../styles/02-components/_social-nav.scss';
 
 const SocialNav = ({ modifier, contactInfo }) => (
-    <nav className={`nav ${modifier}`}>
-        {console.log('contactList', contactInfo)}
+    <div className={`nav ${modifier}`}>
         <ul className="h-list h-list--to-tablet">
             {contactInfo.map(item => {
                 const Icon = require(`../images/icons/${item.icon}.svg`);
@@ -16,7 +15,7 @@ const SocialNav = ({ modifier, contactInfo }) => (
                             href={item.href}
                             rel="noopener noreferrer"
                             target="_blank">
-                            <Icon />
+                            <Icon className={`icon icon--${item.icon}`} />
                             <span className="no-display--from-tablet">
                                 {item.title}
                             </span>
@@ -25,7 +24,7 @@ const SocialNav = ({ modifier, contactInfo }) => (
                 )
             })}
         </ul>
-    </nav>
+    </div>
 );
 
 SocialNav.propTypes = {
