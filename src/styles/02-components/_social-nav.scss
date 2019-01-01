@@ -9,6 +9,7 @@
 
 .nav--social {
     flex: 0 1 auto;
+    order: 3;
 
     @include mq($until: tablet) {
         transform: translateX(200%);

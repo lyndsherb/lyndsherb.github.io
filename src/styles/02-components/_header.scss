@@ -32,6 +32,7 @@
 .header__title {
     @include rem(margin, 10px);
     flex: 1 0 auto;
+    order: 2;
 
     @include mq($from: tablet) {
         margin-left: auto;
@@ -42,6 +43,7 @@
     border-color: $colour-meta;
     background-color: transparent;
     color: $colour-meta;
+    order: 1;
 
     @include hocus() {
         background-color: $colour-meta;
@@ -51,4 +53,8 @@
     @include mq($from: tablet) {
         display: none;
     }
+}
+
+.btn--social {
+    order: 3;
 }

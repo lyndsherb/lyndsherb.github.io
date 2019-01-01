@@ -5,7 +5,7 @@ import '../styles/02-components/_social-nav.scss';
 
 const SocialNav = ({ modifier, contactInfo }) => (
     <div className={`nav ${modifier}`}>
-        <ul className="h-list h-list--to-tablet">
+        <ul className="h-list h-list--to-tablet" aria-labelledby="social">
             {contactInfo.map(item => {
                 const Icon = require(`../images/icons/${item.icon}.svg`);
 

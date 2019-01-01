@@ -8,25 +8,31 @@ import SocialNav from './SocialNav';
 import '../styles/02-components/_header.scss';
 
 const Header = ({ siteTitle, contactInfo }) => (
-  <header className="header">
-      <Container>
-          <button
-              className="btn btn--menu"
-              type="button"
-              aria-label="menu">
-              Menu
-          </button>
-          <Navigation siteTitle={siteTitle} />
-          <h1 className="header__title">
-              <Link to="/">
-                  {siteTitle}
-              </Link>
-          </h1>
-          <SocialNav
-            modifier="nav--social"
-            contactInfo={contactInfo} />
-      </Container>
-  </header>
+    <header className="header">
+        <Container>
+            <h1 className="header__title">
+                <Link to="/">
+                    {siteTitle}
+                </Link>
+            </h1>
+            <button
+                className="btn btn--menu"
+                type="button"
+                aria-label="menu">
+                Menu
+            </button>
+            <Navigation siteTitle={siteTitle} />
+            <button
+                className="btn btn--menu btn--social"
+                type="button"
+                aria-label="social">
+                Social
+            </button>
+            <SocialNav
+                modifier="nav--social"
+                contactInfo={contactInfo} />
+        </Container>
+    </header>
 );
 
 Header.propTypes = {
