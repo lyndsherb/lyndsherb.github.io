@@ -5,3 +5,9 @@
     margin: 0 auto;
     flex: 1 0 auto;
 }
+
+.container--content {
+    @include mq($until: tablet) {
+        @include rem(margin, 0 16px);
+    }
+}
