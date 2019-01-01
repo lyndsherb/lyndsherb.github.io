@@ -18,3 +18,14 @@
         }
     }
 }
+
+.btn--menu {
+    border-color: $colour-meta;
+    background-color: transparent;
+    color: $colour-meta;
+
+    @include hocus() {
+        background-color: $colour-meta;
+        color: $colour-texas;
+    }
+}

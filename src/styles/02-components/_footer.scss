@@ -1,0 +1,8 @@
+@import '../00-variables/all';
+@import '../00-mixins/all';
+
+.footer {
+    @include rem(padding, 10px);
+    background-color: $colour-footer-bg;
+    color: $colour-footer-text;
+}

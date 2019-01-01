@@ -1,0 +1,17 @@
+/*
+ * Mixin - Block content
+ */
+
+@mixin block-content($pseudo: false) {
+    @if ($pseudo == true) {
+        &:before {
+            content: ' ';
+        }
+    }
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}

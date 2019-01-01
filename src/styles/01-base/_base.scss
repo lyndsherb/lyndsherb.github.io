@@ -1,3 +1,25 @@
+@include normalize();
+
+/*
+ * Box-sizing inheritance
+ *
+ * `box-sizing: border-box` is widely accepted to be an accepted standard,
+ * as it means any declaration of a container width includes the padding and the border.
+ * This ensures that everything defaults to border-box and other elements inherit from
+ * their parent.
+ *
+ * https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+ */
+ html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
 body {
     display: flex;
     flex-direction: column;

@@ -1,0 +1,38 @@
+/**
+ * Base - h-list
+ *
+ * Styles for horizontal list items
+ */
+
+.h-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.h-list__item {
+    margin: 0;
+    display: inline-block;
+
+    &:not(:last-of-type) {
+        @include rem(margin-right, 5px);
+    }
+}
+
+@each $point, $val in $mq-breakpoints {
+    .h-list--from-#{$point} {
+        .h-list__item {
+            @include mq($from: $point) {
+                display: block;
+            }
+        }
+    }
+
+    .h-list--to-#{$point} {
+        .h-list__item {
+            @include mq($until: $point) {
+                display: block;
+            }
+        }
+    }
+}
