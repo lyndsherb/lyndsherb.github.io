@@ -8,34 +8,46 @@ import Footer from './Footer';
 
 import '../styles/styles.scss';
 
-const Layout = ({ children }) => (
-  <StaticQuery
-    query={graphql`
-      query SiteInfoQuery {
-        site {
-          siteMetadata {
-            title
-            contactInfo {
-              title
-              icon
-              href
-            }
-          }
+const LayoutDefault = ({
+    children,
+    site: {
+        siteMetadata,
+        mapping: {
+            SiteInfo_social
         }
-      }
-    `}
-    render={({ site: { siteMetadata } }) => (
-        <Fragment>
-          <Header
+    }
+}) => (
+    <Fragment>
+        <Header
             siteTitle={siteMetadata.title}
-            contactInfo={siteMetadata.contactInfo} />
-          <Container modifier="content">
-            {children}
-          </Container>
-          <Footer />
-        </Fragment>
-    )}
-  />
+            contactInfo={SiteInfo_social} />
+            <Container modifier="content">
+                {children}
+            </Container>
+        <Footer />
+    </Fragment>
+);
+
+const Layout = ({ children }) => (
+    <StaticQuery
+        query={graphql`
+            query SiteInfoQuery {
+                site {
+                    siteMetadata {
+                        title
+                    }
+                    mapping {
+                        SiteInfo_social {
+                            title
+                            icon
+                            href
+                        }
+                    }
+                }
+            }
+        `}
+        render={data => <LayoutDefault {...data}>{children}</LayoutDefault>}
+    />
 )
 
 Layout.propTypes = {
