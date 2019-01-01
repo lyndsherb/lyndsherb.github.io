@@ -3,6 +3,12 @@
 
 .footer {
     @include rem(padding, 10px);
+    @include rem(font-size, 14px);
     background-color: $colour-footer-bg;
     color: $colour-footer-text;
+    text-align: center;
+
+    p {
+        @include rem(margin, 0 0 5px 0);
+    }
 }
