@@ -42,3 +42,17 @@
     border-width: 0;
     background-color: none;
 }
+
+.btn[disabled],
+.btn.disabled {
+    background-color: $colour-btn-disabled-bg-default;
+    border-color: $colour-btn-disabled-border-default;
+    color: $colour-btn-disabled-text-default;
+
+    @include hocus() {
+        background-color: $colour-btn-disabled-bg-default;
+        border-color: $colour-btn-disabled-border-default;
+        color: $colour-btn-disabled-text-default;
+        cursor: not-allowed;
+    }
+}

@@ -47,6 +47,11 @@ $colour-btn-secondary-text-default: $colour-grif;
 $colour-btn-secondary-bg-hover: $colour-grif;
 $colour-btn-secondary-text-hover: $colour-meta;
 
+// Disabled
+$colour-btn-disabled-bg-default: $colour-wyoming;
+$colour-btn-disabled-border-default: $colour-btn-disabled-bg-default;
+$colour-btn-disabled-text-default: darken($colour-wash, 10%);
+
 // navigation
 $colour-nav-border-default: transparent;
 $colour-nav-item-active: $colour-tucker;
