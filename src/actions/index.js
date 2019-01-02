@@ -5,7 +5,7 @@
 import * as menu from './menuActions';
 
 const appActions = {
-    menu,
+    ...menu,
 };
 
 export default appActions;

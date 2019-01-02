@@ -10,6 +10,7 @@ import '../styles/02-components/_header.scss';
 const Header = ({
     siteTitle,
     contactInfo,
+    toggleMenu,
 }) => (
     <header className="header">
         <Container>
@@ -22,10 +23,12 @@ const Header = ({
                 className="btn btn--menu no-display--from-tablet"
                 type="button"
                 aria-label="menu"
-                onClick={() => console.log('hello world!')}>
+                onClick={() => toggleMenu()}>
                 Menu
             </button>
-            <Navigation siteTitle={siteTitle} />
+            <Navigation
+                toggleMenu={toggleMenu}
+                siteTitle={siteTitle} />
             <button
                 className="btn btn--menu btn--social no-display--from-tablet"
                 type="button"
@@ -34,6 +37,7 @@ const Header = ({
             </button>
             <SocialNav
                 modifier="nav--social"
+                toggleMenu={toggleMenu}
                 contactInfo={contactInfo} />
         </Container>
     </header>
