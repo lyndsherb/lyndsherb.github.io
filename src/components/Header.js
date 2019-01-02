@@ -7,7 +7,10 @@ import SocialNav from './SocialNav';
 
 import '../styles/02-components/_header.scss';
 
-const Header = ({ siteTitle, contactInfo }) => (
+const Header = ({
+    siteTitle,
+    contactInfo,
+}) => (
     <header className="header">
         <Container>
             <h1 className="header__title">
@@ -18,7 +21,8 @@ const Header = ({ siteTitle, contactInfo }) => (
             <button
                 className="btn btn--menu no-display--from-tablet"
                 type="button"
-                aria-label="menu">
+                aria-label="menu"
+                onClick={() => console.log('hello world!')}>
                 Menu
             </button>
             <Navigation siteTitle={siteTitle} />

@@ -5,3 +5,6 @@
  */
 
 // You can delete this file if you're not using it
+
+import App from './src/containers/App';
+export const wrapRootElement = App;
