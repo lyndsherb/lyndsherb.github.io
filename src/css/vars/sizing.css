@@ -1,0 +1,20 @@
+/*
+    Sizing
+*/
+
+:root {
+    /* default */
+    --sizing-base: 16;
+    --sizing-default: 1rem;
+
+    /* Spacing */
+    --sizing-spacing-x-large: calc(var(--sizing-default) * 2.5);
+    --sizing-spacing-large: calc(var(--sizing-default) * 2);
+    --sizing-spacing-regular: var(--sizing-default);
+    --sizing-spacing-small: calc(var(--sizing-default) / 2);
+    --sizing-spacing-x-small: calc(var(--sizing-default) / 4);
+
+    /* Borders */
+    --sizing-border-default: 1px;
+    --sizing-border-radius: calc(var(--sizing-default) / 4);
+}

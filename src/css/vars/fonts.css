@@ -1,0 +1,28 @@
+/*
+    Font defaults
+
+    Looking for font sizes? They're in 00-vars/_sizes.scss.
+*/
+
+:root {
+    /* Font families */
+    --font-family-default: 'Lato', sans-serif;
+
+    /* Font weights*/
+    --font-weight-normal: 400;
+    --font-weight-bold: 700;
+    --font-weight-display: 600;
+
+    /* Font sizes */
+    --sizing-font-xx-large: calc(var(--sizing-default) * 1.5rem);
+    --sizing-font-x-large: calc(var(--sizing-default) * 1.25rem);
+    --sizing-font-large: calc(var(--sizing-default) * 1.125rem);
+    --sizing-font-regular: var(--sizing-default);
+    --sizing-font-small: calc(var(--sizing-default) / 1.25rem);
+    --sizing-font-x-small: calc(var(--sizing-default) / 1.5rem);
+    --sizing-font-xx-small: calc(var(--sizing-default) / 2rem);
+
+    /* Line heights */
+    --sizing-line-height-default: 1.2;
+    --sizing-line-height-large: 1.5;
+}

@@ -4,7 +4,8 @@
   "description": "Setup for my personal site",
   "main": ".",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
@@ -17,9 +18,9 @@
   },
   "homepage": "https://www.shadowandfox.co",
   "devDependencies": {
-    "gulp": "^3.9.1",
-    "gulp-inject": "^4.3.2",
-    "gulp-sass": "^4.0.1",
-    "gulp-svg-symbols": "^3.1.1"
+    "webpack-cli": "^3.3.11"
+  },
+  "dependencies": {
+    "webpack": "^4.42.0"
   }
 }
