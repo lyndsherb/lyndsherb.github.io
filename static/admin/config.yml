@@ -1,5 +1,5 @@
 backend:
-    name: shadowandfox
+    name: github
     repo: lyndsherb/lyndsherb.github.io
 media_folder: static/assets
 public_folder: /assets
