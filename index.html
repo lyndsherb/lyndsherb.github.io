@@ -4,17 +4,27 @@
         <title>Shadow and Fox</title>
         <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
-        <link rel="stylesheet" href="styles.css" />
         <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-
+        <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@800&family=Titillium+Web:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css" />
     </head>
 
     <body>
-        <header>
-            <img src="https://via.placeholder.com/80" alt="Shadow &amp; Fox, the personal website of Lyndsey Herbert" />
-            <nav>
-                <ul>
+        <header class="header">
+            <img
+                class="logo"
+                src="https://via.placeholder.com/80"
+                role="presentation"
+                width="40"
+                height="40"
+            />
+            <span class="title">Shadow &amp; Fox</span>
+            <label for="menu" class="menuToggle">
+                Menu
+            </label>
+            <input id="menu" name="menu" type="checkbox" class="menuInput" />
+            <nav class="nav">
+                <ul class="navSection navSection--site">
                     <li>
                         <a href="#skills">Skills</a>
                     </li>
@@ -28,12 +38,44 @@
                         <a href="#credit">Credit</a>
                     </li>
                 </ul>
+                <ul class="navSection navSection--social">
+                    <li>
+                        <a href="https://www.twitter.com/lyndsherb" target="_blank" rel="noreferrer noopener">Twitter</a>
+                    </li>
+                    <li>
+                        <a href="https://www.github.com/lyndsherb" target="_blank" rel="noreferrer noopener">Github</a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/lyndsey-herbert-98a865108/" target="_blank" rel="noreferrer noopener">LinkedIn</a>
+                    </li>
+                    <li>
+                        <a href="mailto:lyndsey+website@shadowandfox.co" target="_blank" rel="noreferrer noopener">Email Me</a>
+                    </li>
+                </ul>
             </nav>
         </header>
-        <h1>Lyndsey Herbert</h1>
-        <h2>Senior Front-End Developer</h1>
-        <div class="availibility">
-            Current status: <span class="no">Not looking for work</span>
-        </div>
+        <main class="main">
+            <h1>Lyndsey Herbert</h1>
+            <span>Senior Front-End Developer</span>
+            <section class="section" id="skills">
+                <h2>Skills</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin facilisis sapien non tortor suscipit rhoncus. Phasellus porttitor diam sit amet lacus finibus semper. Donec sollicitudin lacus convallis massa finibus, ut sagittis diam congue. Nullam sodales pellentesque tortor, faucibus molestie mi tempor id. Duis eget fermentum velit, vel posuere tortor. Suspendisse potenti. Curabitur est tellus, dapibus ac sollicitudin vitae, luctus nec elit. Integer hendrerit maximus ex, eu pulvinar quam laoreet a. Sed fringilla ut diam pellentesque volutpat. Aenean non sem convallis, vestibulum tellus in, rutrum risus. Morbi aliquam interdum massa vitae vehicula. In maximus nulla eu vulputate convallis. Vestibulum a lacus in purus pellentesque fermentum vitae quis sem. Maecenas eu nisl pellentesque, lobortis felis in, porta sem. Donec neque dolor, tincidunt in risus et, vulputate aliquam massa.</p>
+            </section>
+            <section class="section" id="jobs">
+                <h2>Employment</h2>
+                <p>Nunc rhoncus sapien quis nulla dictum pellentesque. Duis ullamcorper arcu pretium, congue urna cursus, condimentum elit. Nullam porta maximus urna vitae pulvinar. Mauris risus quam, vulputate eget aliquam eget, fringilla eu lectus. Integer imperdiet aliquet urna ut pulvinar. Curabitur ut placerat lacus. Ut gravida enim vitae nunc pulvinar vehicula. Nunc aliquam, nulla id commodo scelerisque, ligula turpis consectetur eros, in finibus ipsum sapien ut elit. Fusce sed commodo nibh, at dictum ipsum. Duis sed pulvinar sem. Sed eleifend neque ac ligula pellentesque malesuada sed ac nisl. Aenean euismod massa vel ipsum blandit, mattis imperdiet nisi fermentum. Aenean cursus nibh non neque blandit auctor sed at ligula. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nullam commodo, ipsum vel ullamcorper tincidunt, diam sem congue odio, in suscipit risus metus quis lacus. Pellentesque cursus dolor quam, a ultrices velit ultrices nec.</p>
+            </section>
+            <section class="section" id="contact">
+                <h2>Contact</h2>
+                <p>Aenean pretium ipsum id enim mattis vehicula. Ut at dolor neque. Vivamus aliquam urna id urna sodales, et aliquet dolor viverra. Nam facilisis volutpat ex, in posuere mauris molestie a. Curabitur condimentum, nulla sed venenatis placerat, tortor sem aliquet urna, ultricies tincidunt risus tortor non eros. Nulla sit amet laoreet mi. Vivamus auctor eleifend consequat. Mauris venenatis, metus luctus porta ullamcorper, mi quam commodo metus, finibus fringilla eros nunc in turpis.</p>
+            </section>
+            <section class="section" id="credit">
+                <h2>Credit</h2>
+                <p>Donec tempor viverra libero vel fringilla. Integer vulputate risus ac eros condimentum, vel venenatis velit congue. In eu vehicula purus. Sed nisl mi, laoreet mattis sollicitudin non, pellentesque ac odio. Nullam lacus nibh, sollicitudin vel enim in, fermentum hendrerit erat. Vivamus hendrerit dui ac est mollis, ut congue lectus tincidunt. Morbi vel libero a elit placerat efficitur. Vestibulum gravida, ipsum ac pulvinar imperdiet, tortor ligula congue neque, non ullamcorper elit lorem a est. Morbi tincidunt, leo vel condimentum vulputate, urna turpis malesuada nibh, eget tempor augue turpis sit amet augue. Sed suscipit eros quam, eu egestas sem sagittis at. Etiam nec accumsan purus. Vestibulum quis tortor tristique, egestas nulla quis, pulvinar purus. Pellentesque a dolor in felis sagittis consectetur.</p>
+            </section>
+        </main>
+        <footer class="footer">
+            &copy; Lyndsey Herbert 2021. All rights reserved.
+        </footer>
     </body>
 </html>

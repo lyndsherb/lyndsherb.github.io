@@ -1,12 +1,106 @@
-:root {
+/* palette: https://coolors.co/333333-f0edee-087e8b-ff5a5f-c81d25 */
 
+:root {
+    --color-jet: 51, 51, 51;
+    --color-isabelline: 240, 237, 238;
+    --color-persian: 7, 42, 200;
+    --color-pacific: 35, 181, 211;
+    --color-tango: 245, 133, 73;
+
+    --spacing: 1rem;
 }
 
 body {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
     font-family: 'Titillium Web', sans-serif;
+    background-color: rgb(var(--color-isabelline));
+    color: rgb(var(--color-jet));
+    line-height: 1.25;
+    font-size: 16px;
 }
 
 body * {
     box-sizing: inherit;
+}
+
+img {
+    object-fit: cover;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+.title {
+    font-family: 'Alegreya Sans SC', sans-serif;
+    text-transform: uppercase;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+}
+
+.menuLabel {
+    margin-left: auto;
+}
+
+.menuInput:not(:checked) + .nav {
+    display: none;
+}
+
+.navSection {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navSection li + li {
+    margin-top: calc(var(--spacing) / 2);
+}
+
+.main {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.section {
+    margin: 0;
+    flex: 1 0 auto;
+    color: rgb(var(--color-isabelline));
+}
+
+.section:nth-of-type(odd) {
+    background-color: rgb(var(--color-pacific));
+}
+
+.section:nth-of-type(even) {
+    background-color: rgb(var(--color-persian));
+}
+
+.footer {
+}
+
+.logo {
+    flex: 0 0 auto;
+}
+
+@media screen and (from: 768px) {
+    .nav {
+        order: 3;
+        display: block;
+    }
+
+    .navSection {
+        display: flex;
+    }
 }
